@@ -28,3 +28,9 @@ D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\System.Web.WebPages.Razor.xml
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\obj\Debug\DailyLog.Web.csprojResolveAssemblyReference.cache
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\obj\Debug\DailyLog.Web.dll
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\obj\Debug\DailyLog.Web.pdb
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\FluentNHibernate.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\Iesi.Collections.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\NHibernate.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\FluentNHibernate.xml
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\Iesi.Collections.xml
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\NHibernate.xml
