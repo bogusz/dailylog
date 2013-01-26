@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyLog.Web", "DailyLog.Web\DailyLog.Web.csproj", "{8946E878-C57A-40CF-8810-1A40EE2850A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyLog.Core", "DailyLog.Core\DailyLog.Core.csproj", "{7F769114-51AB-4BBF-B7EE-F237067C3DE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8946E878-C57A-40CF-8810-1A40EE2850A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8946E878-C57A-40CF-8810-1A40EE2850A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8946E878-C57A-40CF-8810-1A40EE2850A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8946E878-C57A-40CF-8810-1A40EE2850A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F769114-51AB-4BBF-B7EE-F237067C3DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F769114-51AB-4BBF-B7EE-F237067C3DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F769114-51AB-4BBF-B7EE-F237067C3DE6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7F769114-51AB-4BBF-B7EE-F237067C3DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F769114-51AB-4BBF-B7EE-F237067C3DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
