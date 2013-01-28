@@ -4,13 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using DailyLog.Core;
 using DailyLog.Web.Helpers;
 
 namespace DailyLog.Web.Controllers
 {
     public class EntryController : Controller
-    {        
+    {
+        private IEntryService entryService;
+
+        public EntryController(IEntryService entryService)
+        {
+            this.entryService = entryService;
+        }
+
         public ActionResult Index()
+        {            
+            return Content(entryService.SayHello());
+        }
+
+        public ActionResult TestNHibernate()
         {
             StringBuilder sb = new StringBuilder();
 
@@ -28,7 +41,6 @@ namespace DailyLog.Web.Controllers
                     transaction.Commit();
                 }
             }
-
 
             ViewBag.Message = sb.ToString();
 

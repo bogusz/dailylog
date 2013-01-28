@@ -34,3 +34,12 @@ D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\NHibernate.dll
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\FluentNHibernate.xml
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\Iesi.Collections.xml
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\NHibernate.xml
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\DailyLog.Core.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\DailyLog.Core.pdb
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\StructureMap.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\WebActivator.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\StructureMap.pdb
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\StructureMap.xml

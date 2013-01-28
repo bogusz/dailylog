@@ -1,5 +1,4 @@
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\DailyLog.Core.dll
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\DailyLog.Core.pdb
-D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\obj\Debug\DailyLog.Core.csprojResolveAssemblyReference.cache
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\obj\Debug\DailyLog.Core.dll
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\obj\Debug\DailyLog.Core.pdb

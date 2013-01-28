@@ -6,22 +6,39 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using DailyLog.Core;
+using StructureMap;
 
 namespace DailyLog.Web
-{
-    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
-    // visit http://go.microsoft.com/?LinkId=9394801
-
+{    
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
-        {
+        {                        
             AreaRegistration.RegisterAllAreas();
+
+            var container = ConfigureDependencies();
+            DependencyResolver.SetResolver(new StructureMapDependencyResolver(container));
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);            
+        }
+
+        public static IContainer ConfigureDependencies()
+        {            
+            ObjectFactory.Initialize(x =>
+            {
+                x.Scan(scan =>
+                {
+                    scan.TheCallingAssembly();                    
+                    scan.AssembliesFromApplicationBaseDirectory(assembly => assembly.FullName.Contains("DailyLog"));
+                    scan.WithDefaultConventions();
+                });                
+            });
+
+            return ObjectFactory.Container;
         }
     }
 }
