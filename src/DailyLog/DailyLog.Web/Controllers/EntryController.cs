@@ -4,47 +4,58 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
-using DailyLog.Core;
+using DailyLog.Core.Abstract;
+using DailyLog.Core.Domain;
 using DailyLog.Web.Helpers;
+using DailyLog.Web.Models;
+using NHibernate;
+using NHibernate.Linq;
+using DailyLog.Core.Infrastructure;
 
 namespace DailyLog.Web.Controllers
 {
-    public class EntryController : Controller
-    {
-        private IEntryService entryService;
+    public partial class EntryController : Controller
+    {        
+        private readonly IUserRepository userRepository;
+        private readonly IEntryRepository entryRepository;
 
-        public EntryController(IEntryService entryService)
+        protected User CurrentUser { get; set; }
+
+        public EntryController(IEntryRepository entryRepository, IUserRepository userRepository)
         {
-            this.entryService = entryService;
+            this.userRepository = userRepository;
+            this.entryRepository = entryRepository;
+
+            CurrentUser = userRepository.Query().FirstOrDefault();
         }
 
-        public ActionResult Index()
+        public virtual ActionResult List()
+        {
+            var entries = entryRepository.GetAll();
+
+            return View(entries);
+        }
+
+        public virtual ActionResult Add()
         {            
-            return Content(entryService.SayHello());
+            return View(new AddEntryViewModel());
         }
 
-        public ActionResult TestNHibernate()
+        [HttpPost]
+        public virtual ActionResult Add(AddEntryViewModel model)
         {
-            StringBuilder sb = new StringBuilder();
-
-            using (var session = NHibernateHelper.OpenSession())
+            using (var unitOfWork = UnitOfWork.Begin())
             {
-                using (var transaction = session.BeginTransaction())
-                {
-                    var users = session.QueryOver<User>().List();
+                var entry = new Entry();
+                entry.Content = model.Content;
+                entry.ForDate = DateTime.Now;
+                entry.User = CurrentUser;
+                entryRepository.Save(entry);
 
-                    foreach (var user in users)
-                    {
-                        sb.Append(user.Email + "<br/>");
-                    }
+                unitOfWork.Commit();
+            }            
 
-                    transaction.Commit();
-                }
-            }
-
-            ViewBag.Message = sb.ToString();
-
-            return View();
-        }
+            return RedirectToAction(MVC.Entry.List());
+        }        
     }
 }

@@ -1,0 +1,12 @@
+﻿@model DailyLog.Web.Models.AddEntryViewModel
+@{
+    ViewBag.Title = "Add entry";
+}
+
+@using (Html.BeginForm())
+{    
+    @Html.EditorForModel()
+
+    <input type="submit" name="Save" value="Zapisz" />
+}
+

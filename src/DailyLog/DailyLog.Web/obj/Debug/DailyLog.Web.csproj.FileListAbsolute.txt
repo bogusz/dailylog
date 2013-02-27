@@ -43,3 +43,4 @@ D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\Microsoft.Practices.ServiceLo
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\Microsoft.Practices.ServiceLocation.xml
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\StructureMap.pdb
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\StructureMap.xml
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Web\bin\T4MVCExtensions.dll

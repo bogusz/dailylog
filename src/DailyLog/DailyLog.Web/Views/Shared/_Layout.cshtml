@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/modernizr")    
+    <script src="~/Scripts/knockout-2.1.0.debug.js"></script>
 </head>
 <body>
+
+    <h3>
+        @Html.ActionLink("Lista wpisów", MVC.Entry.ActionNames.List) |           
+        @Html.ActionLink("Dodaj wpis", MVC.Entry.ActionNames.Add)
+    </h3>
+
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")

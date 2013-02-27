@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1>
+    <span data-bind="text: fullName"></span>
+</h1>
+
+<h2>
+    
+<p>First name: <input type="text" data-bind="value: firstName" /></p>
+<p>Last name: <input type="text" data-bind="value: lastName" /></p>
+
+</h2>
+
+<script type="text/javascript">
+   
+    function AppViewModel() {
+        this.firstName = ko.observable("Bogusz");
+        this.lastName = ko.observable("Pękalski");
+
+        this.fullName = ko.computed(function () {
+            return this.firstName() + " " + this.lastName();
+        }, this);
+    }
+
+    ko.applyBindings(new AppViewModel());
+
+</script>

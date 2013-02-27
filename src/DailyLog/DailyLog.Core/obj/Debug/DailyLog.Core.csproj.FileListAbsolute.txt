@@ -2,3 +2,13 @@ D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\DailyLog.Core.dll
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\DailyLog.Core.pdb
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\obj\Debug\DailyLog.Core.dll
 D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\obj\Debug\DailyLog.Core.pdb
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\obj\Debug\DailyLog.Core.csprojResolveAssemblyReference.cache
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\FluentNHibernate.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\Iesi.Collections.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\NHibernate.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\FluentNHibernate.xml
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\Iesi.Collections.xml
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\NHibernate.xml
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\StructureMap.dll
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\StructureMap.pdb
+D:\Projekty\DailyLog\src\DailyLog\DailyLog.Core\bin\Debug\StructureMap.xml

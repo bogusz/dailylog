@@ -7,7 +7,10 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using DailyLog.Core;
+using DailyLog.Core.Infrastructure;
+using NHibernate;
 using StructureMap;
+using StructureMap.Configuration.DSL;
 
 namespace DailyLog.Web
 {    
@@ -34,9 +37,11 @@ namespace DailyLog.Web
                 {
                     scan.TheCallingAssembly();                    
                     scan.AssembliesFromApplicationBaseDirectory(assembly => assembly.FullName.Contains("DailyLog"));
-                    scan.WithDefaultConventions();
-                });                
-            });
+                    scan.WithDefaultConventions();                    
+                });
+
+                x.For<ISession>().HttpContextScoped().Use(NHibernateBootstrapper.OpenSession);
+            });            
 
             return ObjectFactory.Container;
         }

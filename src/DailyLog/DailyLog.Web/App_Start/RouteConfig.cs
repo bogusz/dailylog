@@ -16,7 +16,7 @@ namespace DailyLog.Web
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Entry", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Entry", action = "List", id = UrlParameter.Optional }
             );
         }
     }

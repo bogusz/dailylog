@@ -1,0 +1,13 @@
+﻿@model List<DailyLog.Core.Domain.Entry>
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (var entry in Model)
+{
+    <div>
+        @entry.Content
+        @entry.ForDate
+    </div>
+}
+
